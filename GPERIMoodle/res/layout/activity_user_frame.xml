@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserFrame" >
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" android:contentDescription="@string/desc"/>
+
+    <TextView
+        android:id="@+id/lblFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgPic"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgPic"
+        android:text="@string/full_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/lstFunctions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgPic"
+        android:layout_marginTop="16dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/lblDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblFName"
+        android:layout_below="@+id/lblFName"
+        android:text="@string/branch_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDep"
+        android:layout_below="@+id/lblDep"
+        android:text="@string/city_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblCity"
+        android:layout_below="@+id/lblCity"
+        android:text="@string/institute_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
