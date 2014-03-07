@@ -6,16 +6,20 @@ import java.util.List;
 import com.example.gperimoodle.R.id;
 
 import android.R.string;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class CourseContents extends Activity {
+public class CourseContents extends Activity implements AdapterView.OnItemClickListener
+{
 	
 	//EditText result;
 	
@@ -26,13 +30,16 @@ public class CourseContents extends Activity {
 	String[] retResult=new String[2];
 	String[] retResult2=new String[2];
 	
-	List<String> fileName=new ArrayList<String>();
-	List<String> fileURL=new ArrayList<String>();
+	String[] fName;
+	String[] fURL;
 	
 	Integer count;
 	
 	public void setContents()
 	{
+		
+		List<String> fileName=new ArrayList<String>();
+		List<String> fileURL=new ArrayList<String>();
 		
 		//result.setText(courseId.toString());
 		try
@@ -70,11 +77,11 @@ public class CourseContents extends Activity {
 			
 			}
 			
-			String[] arr1=fileName.toArray(new String[fileName.size()]);
-			String[] arr2=fileURL.toArray(new String[fileURL.size()]);
+			fName=fileName.toArray(new String[fileName.size()]);
+			fURL=fileURL.toArray(new String[fileURL.size()]);
 			
-			Contents.setFileName(arr1);
-			Contents.setFileURL(arr2);
+			Contents.setFileName(fName);
+			Contents.setFileURL(fURL);
 			
 			ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Contents.getFileName());
 			lstCnt.setAdapter(adapter);
@@ -103,6 +110,7 @@ public class CourseContents extends Activity {
 		//result=(EditText) findViewById(id.result);
 		
 		lstCnt=(ListView) findViewById(id.lstCnt);
+		lstCnt.setOnItemClickListener(this);
 		
 		courseId=getIntent().getStringExtra("courseId");
 		
@@ -110,6 +118,17 @@ public class CourseContents extends Activity {
 		
 		
 		setContents();
+		
+		
+	}
+
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int index, long arg3) {
+		// TODO Auto-generated method stub
+		
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(fURL[index]+"&token="+User.getToken()));
+		startActivity(browserIntent);
 		
 		
 	}
