@@ -29,7 +29,7 @@ public class Login extends Activity
 		alertDialogBuilder.setTitle("Alert");
  
 		alertDialogBuilder
-				.setMessage("Exit GPERI Moodle?")
+				.setMessage("Exit Exit GPERI Moodle?")
 				.setCancelable(false)
 				.setPositiveButton("Exit",new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,int id) {

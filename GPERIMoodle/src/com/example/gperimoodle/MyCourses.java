@@ -48,7 +48,7 @@ public class MyCourses extends Activity implements AdapterView.OnItemClickListen
 		courseShortName=res.getStringArray(R.array.sName);
 		
 		lstCourses=(ListView) findViewById(R.id.lstCourses);
-		
+		lstCourses.setOnItemClickListener(this);
 		
 		
 		try
