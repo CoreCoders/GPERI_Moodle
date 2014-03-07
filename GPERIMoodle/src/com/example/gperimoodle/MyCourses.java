@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 
 public class MyCourses extends Activity implements AdapterView.OnItemClickListener
@@ -18,12 +19,14 @@ public class MyCourses extends Activity implements AdapterView.OnItemClickListen
 	ListView lstCourses;
 	String[] courseFullName;
 	String[] courseShortName;	
+	String[] courseId;
 	
 	public void setCourses()
 	{		
 		
 		courseFullName=Course.getfName();
 		courseShortName=Course.getsName();
+		courseId=Course.getId();
 		
 		//ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,courseFullName);
 		CourseAdapter adapter=new CourseAdapter(this, courseFullName,courseShortName);
@@ -68,6 +71,11 @@ public class MyCourses extends Activity implements AdapterView.OnItemClickListen
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int index, long arg3)
 	{
+		
+			Intent i=new Intent(this,CourseContents.class);
+			i.putExtra("courseId", courseId[index]);
+			startActivity(i);
+		
 		
 	}
 

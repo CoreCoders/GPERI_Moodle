@@ -61,6 +61,11 @@ public class Moodle extends AsyncTask<String, Void, String>
 	{
 		call=domainName+"/webservice/rest/server.php?wstoken="+token+"&wsfunction=moodle_message_send_instantmessages&messages[0][touserid]="+toUserId+"&messages[0][text]="+msg+"&messages[0][textformat]=1";
 	}
+	
+	public void getCourseContents(String token,String courseId)
+	{
+		call=domainName+"/webservice/rest/server.php?wstoken="+token+"&wsfunction=core_course_get_contents&courseid="+courseId;
+	}
 
 	
 	@Override
@@ -105,6 +110,9 @@ public class Moodle extends AsyncTask<String, Void, String>
 			case 5:	params[3]=params[3].replaceAll(" ", "%20");
 					params[3]=params[3].replaceAll("\n", "%0A");
 					sendInstantMsg(params[1], params[2], params[3]);
+					break;
+					
+			case 6:	getCourseContents(params[1], params[2]);
 					break;
 					
 			default:call="";

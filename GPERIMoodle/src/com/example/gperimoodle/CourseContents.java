@@ -1,22 +1,41 @@
 package com.example.gperimoodle;
 
+import com.example.gperimoodle.R.id;
+
+import android.R.string;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.EditText;
 
 public class CourseContents extends Activity {
+	
+	EditText result;
+	
+
+	
+	public void setContents()
+	{
+		
+		result.setText(getIntent().getStringExtra("courseId"));
+		
+	}
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
+		result=(EditText) findViewById(id.result);
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_course_contents);
+		
+		
+		setContents();
+		
+		
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.course_contents, menu);
-		return true;
-	}
+	
+	
 
 }
