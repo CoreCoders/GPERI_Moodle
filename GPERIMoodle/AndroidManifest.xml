@@ -47,7 +47,8 @@
         </activity>
         <activity
             android:name="com.example.gperimoodle.CourseContents"
-            android:label="@string/title_activity_course_contents" >
+            android:label="@string/title_activity_course_contents"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
