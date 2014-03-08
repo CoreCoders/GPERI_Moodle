@@ -17,11 +17,6 @@ public class InstantMessaging extends Activity implements AdapterView.OnItemSele
 	
 	Spinner lstFriends;
 	
-	
-	
-	
-	//String[] result=new String[2];
-	
 	String[] id;
 	
 	EditText msg;
@@ -136,27 +131,17 @@ public class InstantMessaging extends Activity implements AdapterView.OnItemSele
 		try
 		{
 			
-			//User.setResponseXML(new Moodle().execute("4",User.getToken(),courses[0]).get());
-			
-			
-			
 			setFriends();
 			
 		}
 		catch(Exception e)
 		{
 			
-		}
-		
-		
+		}		
 		
 	}
-
-
-
-
-
-
+	
+	
 
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int index, long arg3)
