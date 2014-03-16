@@ -33,5 +33,7 @@
     <string name="message">Message:</string>
     <string name="enter_message">Enter Message</string>
     <string name="title_activity_course_contents">Course Contents</string>
+    <string name="title_activity_about_us">About US</string>
+    <string name="title_activity_x">X</string>
 
 </resources>

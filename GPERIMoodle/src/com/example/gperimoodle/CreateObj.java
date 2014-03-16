@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.hardware.Camera.Size;
 
 
 public class CreateObj
@@ -102,6 +103,7 @@ public class CreateObj
 				name[i]=name[i].substring(name[i].indexOf('_')+1);
 				
 				User.setResponseXML(result[1]);
+				
 			}
 			
 			Friend.setId(id);
@@ -124,6 +126,8 @@ public class CreateObj
 		
 		List<String> fileName=new ArrayList<String>();
 		List<String> fileURL=new ArrayList<String>();
+		List<String> fileType=new ArrayList<String>();
+		List<String> fileSize=new ArrayList<String>();
 		
 		try
 		{
@@ -133,6 +137,8 @@ public class CreateObj
 			
 			String[] fName;
 			String[] fURL;
+			String[] fType;
+			String[] fSize;
 			
 			this.context=context;
 			
@@ -152,26 +158,32 @@ public class CreateObj
 			
 				count=ParseXML.countX("<SINGLE>", result[0]);
 				
-			for(int i=0;i<count;i++)
-			{
-				result2=ParseXML.getSingleDetails("<SINGLE>", "</SINGLE>", result[0]);
-				fileName.add(ParseXML.getValue("filename", result2[0]));
-				fileURL.add(ParseXML.getValue("fileurl", result2[0]));
+				for(int i=0;i<count;i++)
+				{
+					result2=ParseXML.getSingleDetails("<SINGLE>", "</SINGLE>", result[0]);
+					fileName.add(ParseXML.getValue("filename", result2[0]));
+					fileURL.add(ParseXML.getValue("fileurl", result2[0]));
+					fileSize.add(ParseXML.getValue("filesize", result2[0]));
+					fileType.add(ParseXML.getValue("type", result2[0]));
+					
+					result[0]=result2[1];
+					
+				}
 				
-				result[0]=result2[1];
 				
-			}
-			
-			
-			User.setResponseXML(result[1]);
+				User.setResponseXML(result[1]);
 			
 			}
 			
 			fName=fileName.toArray(new String[fileName.size()]);
 			fURL=fileURL.toArray(new String[fileURL.size()]);
+			fSize=fileSize.toArray(new String[fileSize.size()]);
+			fType=fileType.toArray(new String[fileType.size()]);
 			
 			Content.setFileName(fName);
 			Content.setFileURL(fURL);
+			Content.setFileSize(fSize);
+			Content.setFileType(fType);
 		
 		}
 		catch (Exception e)

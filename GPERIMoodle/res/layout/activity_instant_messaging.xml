@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/spnFriends"
@@ -39,7 +39,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignLeft="@+id/txtAbout"
         android:layout_below="@+id/spnFriends"
         android:layout_marginTop="15dp"
         android:text="@string/message"

@@ -9,6 +9,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +21,43 @@ public class Login extends Activity
 	
 	Button btnLogin;
 	TextView uid,pass;
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.login, menu);
+		return true;
+	}
+	
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		super.onOptionsItemSelected(item);
+	
+		switch(item.getItemId())
+		{
+			case R.id.about:
+				startActivity(new Intent(this, About.class));
+				break;
+				
+			case R.id.sendFeedback:
+				
+				Intent emailIntent = new Intent(Intent.ACTION_SEND);
+				emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"gpericollege@gmail.com"});
+				emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GPERI Moodle App Feedback");
+				emailIntent.putExtra(Intent.EXTRA_TEXT, "Write your Likes and Dislikes about the App");				
+				emailIntent.setType("message/rfc822");				
+				startActivity(Intent.createChooser(emailIntent, "Choose E-mail Clent"));
+				
+				break;
+		}
+		
+		
+		return true;
+	}
+	
 	
 
 	@Override

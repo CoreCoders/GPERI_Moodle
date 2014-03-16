@@ -50,6 +50,14 @@
             android:label="@string/title_activity_course_contents"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.gperimoodle.About"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.example.gperimoodle.X"
+            android:label="@string/title_activity_x" >
+        </activity>
     </application>
 
 </manifest>

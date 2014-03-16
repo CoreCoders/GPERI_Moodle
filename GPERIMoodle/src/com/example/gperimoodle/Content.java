@@ -3,7 +3,7 @@ package com.example.gperimoodle;
 public class Content
 {
 	
-	private static String[] fileName,fileURL,fileSize;
+	private static String[] fileName,fileURL,fileSize,fileType;
 
 	public static String[] getFileName() {
 		return fileName;
@@ -27,6 +27,14 @@ public class Content
 
 	public static void setFileSize(String[] fileSize) {
 		Content.fileSize = fileSize;
+	}
+
+	public static String[] getFileType() {
+		return fileType;
+	}
+
+	public static void setFileType(String[] fileType) {
+		Content.fileType = fileType;
 	}
 
 }
