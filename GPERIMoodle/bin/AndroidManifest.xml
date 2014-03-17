@@ -52,11 +52,8 @@
         </activity>
         <activity
             android:name="com.example.gperimoodle.About"
-            android:label="@string/title_activity_about_us" >
-        </activity>
-        <activity
-            android:name="com.example.gperimoodle.X"
-            android:label="@string/title_activity_x" >
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

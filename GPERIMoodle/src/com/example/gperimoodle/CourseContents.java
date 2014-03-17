@@ -28,6 +28,7 @@ public class CourseContents extends Activity implements AdapterView.OnItemClickL
 	ListView lstCnt;
 	
 	String courseId;
+	String courseName;
 	
 	String[] fName;
 	String[] fURL;
@@ -103,7 +104,10 @@ public class CourseContents extends Activity implements AdapterView.OnItemClickL
 		lstCnt=(ListView) findViewById(id.lstCnt);
 		lstCnt.setOnItemClickListener(this);
 		
-		courseId=getIntent().getStringExtra("courseId");		
+		courseId=getIntent().getStringExtra("courseId");
+		courseName=getIntent().getStringExtra("courseName");
+		
+		setTitle(courseName);
 		
 		setContents();		
 		
@@ -113,6 +117,7 @@ public class CourseContents extends Activity implements AdapterView.OnItemClickL
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int index, long arg3)
 	{
+		
 		
 		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(fURL[index]+"&token="+User.getToken()));
 		startActivity(browserIntent);		
@@ -187,11 +192,14 @@ class ContentAdapter extends ArrayAdapter<String>
 		}
 		if(fName[position].contains(".html"))
 		{
-			_icon.setImageDrawable(context.getResources().getDrawable(R.drawable.url));
+			_icon.setImageDrawable(context.getResources().getDrawable(R.drawable.html));
 		}
+		if(fName[position].contains("N/A"))
+		{
+			_icon.setImageDrawable(context.getResources().getDrawable(R.drawable.url));
+		}		
 		
-		
-		return contentRow;
+		return contentRow;		
 		
 	}
 	

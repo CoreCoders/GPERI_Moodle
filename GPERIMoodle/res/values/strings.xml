@@ -35,5 +35,6 @@
     <string name="title_activity_course_contents">Course Contents</string>
     <string name="title_activity_about_us">About US</string>
     <string name="title_activity_x">X</string>
+    <string name="about">Moodle is a learning platform disigned to provide educators, administrators and learners with a single robust, secure and integrated system to create personalised learning enviornments. GPERI Moodle App is a Customized Android application targeted to provide quick access to GPERI Moodle DMS Website contents, So that Students can easily access the specific contents. The basic idea is aspired to provide one touch solution with easy access, It uses Moodle API and Moodel Moblie web service to communicate with the server. The application is Developed by students of Gujarat Power Engineering and Research Institute.</string>
 
 </resources>

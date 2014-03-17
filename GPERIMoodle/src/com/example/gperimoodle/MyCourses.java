@@ -115,6 +115,7 @@ public class MyCourses extends Activity implements AdapterView.OnItemClickListen
 		
 			Intent i=new Intent(this,CourseContents.class);
 			i.putExtra("courseId", courseId[index]);
+			i.putExtra("courseName", courseFullName[index]);
 			startActivity(i);
 		
 		
