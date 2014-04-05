@@ -61,4 +61,12 @@
         android:onClick="tryLogin"
         android:text="@string/login" />
 
+    <CheckBox
+        android:id="@+id/chkRemMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPass"
+        android:layout_below="@+id/editPass"
+        android:text="@string/keep_me_logged_in" />
+
 </RelativeLayout>

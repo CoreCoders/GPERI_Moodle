@@ -8,19 +8,26 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class Login extends Activity
 {
 	
+	public static final String prefName = "PrefFile";
+	
 	
 	Button btnLogin;
 	TextView uid,pass;
+	CheckBox remMe;
+	
+	SharedPreferences sp;
 	
 	
 	
@@ -106,12 +113,38 @@ public class Login extends Activity
 		btnLogin=(Button) findViewById(R.id.btnLogin);
 		uid=(TextView) findViewById(R.id.editUsername);
 		pass=(TextView) findViewById(R.id.editPass);
+		remMe=(CheckBox) findViewById(R.id.chkRemMe);
+		remMe.setChecked(false);
+		
+		sp=getSharedPreferences(prefName, MODE_PRIVATE);
+		String suid=sp.getString("prefUid", null);
+		String spass=sp.getString("prefPass", null);
+		
+		if(suid!=null && spass!=null)
+		{
+			uid.setText(suid);
+			pass.setText(spass);
+			remMe.setChecked(true);
+		}
+		
 		
 	}
 	
 	public void tryLogin(View v)
     {
-		
+		SharedPreferences.Editor edt=sp.edit();
+		if(remMe.isChecked())
+		{
+			edt.putString("prefPass", pass.getText().toString());
+			edt.putString("prefUid", uid.getText().toString());
+			edt.commit();
+		}
+		else
+		{
+			edt.putString("prefPass", null);
+			edt.putString("prefUid", null);
+			edt.commit();
+		}
 		
     	if(TextUtils.isEmpty(uid.getText()) || TextUtils.isEmpty(pass.getText()))
 		{
