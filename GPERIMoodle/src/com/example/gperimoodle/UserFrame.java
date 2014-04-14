@@ -26,41 +26,6 @@ public class UserFrame extends Activity implements AdapterView.OnItemClickListen
 	
 	
 	
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.login, menu);
-		return true;
-	}
-	
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		super.onOptionsItemSelected(item);
-	
-		switch(item.getItemId())
-		{
-			case R.id.about:
-				startActivity(new Intent(this, About.class));
-				break;
-				
-			case R.id.sendFeedback:
-				
-				Intent emailIntent = new Intent(Intent.ACTION_SEND);
-				emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"gpericollege@gmail.com"});
-				emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GPERI Moodle App Feedback");
-				emailIntent.putExtra(Intent.EXTRA_TEXT, "Write your Likes and Dislikes about the App");				
-				emailIntent.setType("message/rfc822");				
-				startActivity(Intent.createChooser(emailIntent, "Choose E-mail Clent"));
-				
-				break;
-		}
-		
-		
-		return true;
-	}
-	
-	
-	
 	
 	@Override
 	public void onBackPressed()
@@ -142,7 +107,7 @@ public class UserFrame extends Activity implements AdapterView.OnItemClickListen
 	}
 	
 	
-	String[] functions={"My Info","My Courses","Instant Messaging"};
+	String[] functions={"My Info","My Courses","Instant Messaging","Send Feedback","About"};
 	
 	
 
@@ -206,6 +171,19 @@ public class UserFrame extends Activity implements AdapterView.OnItemClickListen
 		{
 			Intent i=new Intent(this,InstantMessaging.class);
 			startActivity(i);
+		}
+		if(index==3)
+		{
+			Intent emailIntent = new Intent(Intent.ACTION_SEND);
+			emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"gpericollege@gmail.com"});
+			emailIntent.putExtra(Intent.EXTRA_SUBJECT, "GPERI Moodle App Feedback");
+			emailIntent.putExtra(Intent.EXTRA_TEXT, "Write your Likes and Dislikes about the App");				
+			emailIntent.setType("message/rfc822");				
+			startActivity(Intent.createChooser(emailIntent, "Choose E-mail Clent"));
+		}
+		if(index==4)
+		{
+			startActivity(new Intent(this, About.class));
 		}
 		
 		
