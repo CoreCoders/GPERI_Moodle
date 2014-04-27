@@ -189,7 +189,7 @@ public class InstantMessaging extends Activity implements AdapterView.OnItemSele
 	{
 		
 		toUserId=id[index];
-		Toast.makeText(this, toUserId, Toast.LENGTH_SHORT).show();
+		//Toast.makeText(this, toUserId, Toast.LENGTH_SHORT).show();
 		
 	}
 
