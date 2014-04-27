@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.5" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="com.example.gperimoodle.Course" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Course.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="146" x="41" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.example.gperimoodle.MyInfo" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="230" x="703" y="675"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.example.gperimoodle.About" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/About.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="134" x="651" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.example.gperimoodle.ParseXML" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/ParseXML.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="237" x="1079" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.example.gperimoodle.MyCourses" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyCourses.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="258" x="321" y="675"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.example.gperimoodle.Login" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Login.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="230" x="1356" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.example.gperimoodle.InstantMessaging" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/InstantMessaging.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="278" x="1015" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.example.gperimoodle.User" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="837" width="170" x="869" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.example.gperimoodle.Friend" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Friend.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="141" x="688" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.example.gperimoodle.CourseContents" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CourseContents.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="258" x="321" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.example.gperimoodle.Content" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Content.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="149" x="341" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.example.gperimoodle.Moodle" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Moodle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="292" x="1356" y="1596"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.example.gperimoodle.ContentAdapter" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CourseContents.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="258" x="62" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.example.gperimoodle.CreateObj" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CreateObj.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="209" x="381" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.example.gperimoodle.GetImage" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/GetImage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="181" x="773" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.example.gperimoodle.CourseAdapter" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyCourses.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="219" x="62" y="1030"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.example.gperimoodle.UserFrame" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/UserFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="467" x="868" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="21">    
+    <bendpoint x="651" y="356"/>    
+    <bendpoint x="651" y="675"/>    
+    <bendpoint x="651" y="1030"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="22">    
+    <bendpoint x="963" y="675"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="24">    
+    <bendpoint x="1365" y="356"/>    
+    <bendpoint x="1365" y="675"/>    
+    <bendpoint x="1344" y="1030"/>    
+    <bendpoint x="1302" y="1367"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="26">    
+    <bendpoint x="1056" y="1367"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="27">    
+    <bendpoint x="350" y="1367"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="29">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="30">    
+    <bendpoint x="693" y="1030"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="31">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="672" y="675"/>    
+    <bendpoint x="672" y="1030"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="34">    
+    <bendpoint x="609" y="675"/>    
+    <bendpoint x="609" y="1030"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="36">    
+    <bendpoint x="1005" y="675"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="37">    
+    <bendpoint x="31" y="1030"/>    
+    <bendpoint x="31" y="1367"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="38">    
+    <bendpoint x="1005" y="1367"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="40">    
+    <bendpoint x="1323" y="675"/>    
+    <bendpoint x="1323" y="1030"/>    
+    <bendpoint x="1323" y="1367"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="41">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="42">    
+    <bendpoint x="620" y="1367"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="43">    
+    <bendpoint x="630" y="1030"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="44">    
+    <bendpoint x="742" y="1030"/>    
+    <bendpoint x="815" y="1367"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="45">    
+    <bendpoint x="860" y="1367"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="46">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="48">    
+    <bendpoint x="1344" y="675"/>    
+    <bendpoint x="1365" y="1030"/>    
+    <bendpoint x="1365" y="1367"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="49">    
+    <bendpoint x="1344" y="1367"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="50">    
+    <bendpoint x="984" y="675"/>    
+    <bendpoint x="984" y="1030"/>    
+    <bendpoint x="984" y="1367"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="51">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="52">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="53">    
+    <bendpoint x="1386" y="356"/>    
+    <bendpoint x="1386" y="675"/>    
+    <bendpoint x="1386" y="1030"/>    
+    <bendpoint x="1386" y="1367"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

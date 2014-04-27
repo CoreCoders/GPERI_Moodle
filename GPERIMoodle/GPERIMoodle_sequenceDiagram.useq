@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.5" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.example.gperimoodle.UserFrame" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/UserFrame.java" binary="false" label="userFrame" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="com.example.gperimoodle.User" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/User.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>    
+    <execution id="3">      
+      <position height="154" width="116" x="125" y="272"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="7" x="180" y="323"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="com.example.gperimoodle.ParseXML" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/ParseXML.java" binary="false" label="parseXML" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="10" language="java" name="com.example.gperimoodle.MyInfo" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyInfo.java" binary="false" label="myInfo" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="11" language="java" name="com.example.gperimoodle.CourseAdapter" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyCourses.java" binary="false" label="courseAdapter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="12" language="java" name="com.example.gperimoodle.MyCourses" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/MyCourses.java" binary="false" label="myCourses" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="13" language="java" name="com.example.gperimoodle.Moodle" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Moodle.java" binary="false" label="moodle" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>    
+    <execution id="5">      
+      <position height="72" width="116" x="725" y="293"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.example.gperimoodle.Login" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Login.java" binary="false" label="login" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>    
+    <execution id="16">      
+      <position height="84" width="116" x="845" y="137"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="116" x="845" y="179"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="196" width="116" x="845" y="251"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="21" width="7" x="900" y="384"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.example.gperimoodle.InstantMessaging" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/InstantMessaging.java" binary="false" label="instantMessaging" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="22" language="java" name="com.example.gperimoodle.GetImage" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/GetImage.java" binary="false" label="getImage" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="23" language="java" name="com.example.gperimoodle.Friend" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Friend.java" binary="false" label="friend" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="24" language="java" name="com.example.gperimoodle.CreateObj" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CreateObj.java" binary="false" label="createObj" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="25" language="java" name="com.example.gperimoodle.ContentAdapter" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CourseContents.java" binary="false" label="contentAdapter" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="26" language="java" name="com.example.gperimoodle.CourseContents" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/CourseContents.java" binary="false" label="courseContents" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="27" language="java" name="com.example.gperimoodle.Course" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Course.java" binary="false" label="course" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="28" language="java" name="com.example.gperimoodle.Content" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/Content.java" binary="false" label="content" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <object id="29" language="java" name="com.example.gperimoodle.About" project="GPERIMoodle" 
+    file="/GPERIMoodle/src/com/example/gperimoodle/About.java" binary="false" label="about" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="284" y="0"/>  
+  </object>  
+  <message id="4" operation="getToken(java.lang.String,java.lang.String):void">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="14" operation="setResponseXML(java.lang.String):void">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="17" operation="tryLogin(android.view.View):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="20" operation="getResponseXML():java.lang.String">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="3"/>  
+  </message>
+</sequence-diagram>
